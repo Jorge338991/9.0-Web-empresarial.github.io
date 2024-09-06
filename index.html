@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno</title>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.flipbox.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/flip-box.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fonts/style.css">
+    <link rel="stylesheet" href="css/estructura.css">
+    <link rel="stylesheet" href="css/formato_estandar.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.flipbox.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/flip-box.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+
+
+
+
+
+
+    <script>   
+
+
+        $(document).ready(function() { 
+  
+
+            AOS.init({
+                
+                delay: 500,
+                duration:1500,
+
+                });
+
+                
+                $('.video').magnificPopup({
+    
+                    type: 'iframe',
+                                
+    
+                });
+                
+                
+                
+
+
+
+            
+
+            
+
+            $("#cajapadre").flipbox({
+                vertical: false,
+                autoplay: false,
+                autoplayReverse: false,
+	            autoplayWaitDuration: 3000,
+	            autoplayPauseOnHover: true,
+                animationDuration: 500,
+                animationEasing: 'ease'
+                
+	        });
+
+
+            $("#next").click(function(){
+
+                $("#cajapadre").flipbox('next');
+
+            });
+
+            $("#prev").click(function(){
+
+            $("#cajapadre").flipbox('prev');
+            
+
+
+            });
+
+            $('#carrusel').owlCarousel({
+                    
+                
+                    center: false,
+                    items:4,
+                    loop:true,
+                    margin:0,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:4
+                        },
+                        1000:{
+                            items:4
+                        }
+                    }
+
+            });
+
+            $('#contenedortestimonios').owlCarousel({
+
+                    dots:true,
+                    center: false,
+                    loop:true,
+                    margin:20,
+                    stagePadding:10,
+                    responsive:{
+                        0:{
+                            items:1,
+                        },
+                        600:{
+                            items:2,
+                        },
+                        1000:{
+                            items:3,
+                        }
+                    }
+
+            });carruselblog
+
+            $('#carruselblog').owlCarousel({
+                    nav:false,
+                    dots:true,
+                    center: false,
+                    loop:false,
+                    margin:20,
+                    stagePadding:10,
+                    responsive:{
+                        0:{
+                            items:1,
+                        },
+                        600:{
+                            items:2,
+                        },
+                        1000:{
+                            items:3,
+                        }
+                    }
+
+            });
+
+            var owl = $('.owl-carousel');
+
+                owl.owlCarousel();
+                // Go to the next item
+                $('.customNextBtn').click(function() {
+                    owl.trigger('next.owl.carousel');
+                })
+
+                $('.customPrevBtn').click(function() {
+                    // With optional speed parameter
+                    // Parameters has to be in square bracket '[]'
+                    owl.trigger('prev.owl.carousel', [300]);
+                })
+
+            
+
+            
+
+
+             
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                if(scroll>150){
+
+                    $("#scrollUp").css("display","block");
+
+                }
+                
+                else{
+
+                    $("#scrollUp").css("display","none");
+                }
+            })
+
+
+            
+
+
+           
+
+
+        })
+
+            
+    </script>
+    
+
+
+    </head>
+
+
+    <body class="padrerelativo">
+
+        <header class="flex p-jcc p-aic">
+
+                <div class="centrado  m-columna m-wrap flex p-fila p-jcsb p-aic">
+
+                    <div class="flex m-100 m-columna m-aic m-wrap p-60 p-fila p-jcfs p-aic ">
+                        
+                        <a class="flex margingmobil p-fila p-jcfs p-aic" href="mailto:example@example.com">
+                            <i class="fa-regular fa-envelope margenesi"></i>
+                            <p>example@example.com </p>
+                        </a>
+
+                        <div class="flex margingmobil p-fila p-jcfs p-aic">
+                        
+                            <i class="fa-solid fa-map margenesi"></i>
+                            <p>2/20, Astern Road, USA</p>
+
+                        </div>
+                        
+                        <div class="flex margingmobil p-fila p-jcfs p-aic ">
+                            
+                            <a class="flex p-fila p-jcfs p-aic" href="tel:+880 320 432 242">
+                                <i class="fa-solid fa-phone margenesi"></i>
+                                <p>+880 320 432 242</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex margingmobil m-100 m-jcc m-wrap p-40 p-fila p-jcfe p-aic">
+
+                        <a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f margenesi"></i></a>
+                        <a href="https://twitter.com/?lang=es>" target="_blank"><i class="fa-brands fa-twitter margenesi"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram margenesi"></i></a>
+                        <a href="https://dribbble.com/" target="_blank"><i class="fa-brands fa-dribbble margenesi"></i></a>
+
+
+
+                    </div>
+
+                </div>
+
+        </header>
+
+        <nav>
+
+            <div class="flex p-jcc p-aic padrerelativo">
+
+                <div id="nav" class="flex centrado m-columna m-wrap p-fila p-wrap padrerelativo">
+
+                    <div class="flex margingmobil m-100 m-jcc p-30 p-fila p-jcfs p-aic  ">
+                        <img class="flex p-40" src="./fotos/main-logo.png">
+                    </div>
+
+                    <div class="flex  p-fila p-70 none ">
+
+                        <ul id="menu_principal" class="flex m-100 m-columna m-aic  m-wrap p-100 p-fila p-jcfe p-wrap">
+
+                            <li id="home" class="flex m-wrap p-aic">Home<i id="iconohome" class="fa-solid fa-chevron-down"></i>
+                            
+                                <div id="desplegable_home" class="flex m-100 m-columna m-wrap p-fila p-jcse p-aic">
+                                    
+                                    
+                                    <ol class="tabla1 flex m-wrap p-columna">
+
+                                            <li>Demo</li>
+                                            <li>IT Solution (New)</li>
+                                            <li>Software & Startup(New)</li>
+                                            <li>Home SEO (New)</li>
+                                            <li>Insurance (New)</li>
+                                            <li>IT Solution Demo 02</li>
+                                            <li>IT Solution Demo 03</li>
+                                            <li>IT Solution Demo 04</li>
+                                            <li>IT Solution Demo 05</li>
+                                            <li>IT Solution Demo 06</li>
+                
+                                        </ol>
+                                    
+
+                                   
+                                    <ol class="tabla1 flex m-wrap p-columna">
+
+                                            <li>Demo</li>
+                                            <li>IT Solution (New)</li>
+                                            <li>Software & Startup(New)</li>
+                                            <li>Home SEO (New)</li>
+                                            <li>Insurance (New)</li>
+                                            <li>IT Solution Demo 02</li>
+                                            <li>IT Solution Demo 03</li>
+                                            <li>IT Solution Demo 04</li>
+                                            <li>IT Solution Demo 05</li>
+                                            <li>IT Solution Demo 06</li>
+                
+                                    </ol>
+                                    
+
+                                    <ol class="tabla1 flex m-wrap p-columna">
+
+                                        <li>Demo</li>
+                                        <li>IT Solution (New)</li>
+                                        <li>Software & Startup(New)</li>
+                                        <li>Home SEO (New)</li>
+                                        <li>Insurance (New)</li>
+                                        <li>IT Solution Demo 02</li>
+                                        <li>IT Solution Demo 03</li>
+                                        <li>IT Solution Demo 04</li>
+                                        <li>IT Solution Demo 05</li>
+                                        <li>IT Solution Demo 06</li>
+            
+                                    </ol>
+
+                                    <ol class="tabla1 flex m-wrap p-columna">
+
+                                        <li>Demo</li>
+                                        <li>IT Solution (New)</li>
+                                        <li>Software & Startup(New)</li>
+                                        <li>Home SEO (New)</li>
+                                        <li>Insurance (New)</li>
+                                        <li>IT Solution Demo 02</li>
+                                        <li>IT Solution Demo 03</li>
+                                        <li>IT Solution Demo 04</li>
+                                        <li>IT Solution Demo 05</li>
+                                        <li>IT Solution Demo 06</li>
+            
+                                    </ol>
+
+                                </div>
+                            
+                            </li>
+
+
+                            <li class="flex p-aic">Company</li>
+                            <li id="services" class="flex p-aic">Services<i class="fa-solid fa-chevron-down"></i>
+
+                                <div id="desplegable_services" class="flex p-columna padrerelativo">
+                                    
+                                    
+                                    <ol id="columna_services" class="tabla1 flex p-columna">
+
+                                            <li>Demo</li>
+                                            <li>IT Solution (New)</li>
+                                            <li>Software & Startup(New)</li>
+                                            <li>Home SEO (New)</li>
+                                    
+                                    </ol>
+
+                                </div>
+
+                            </li>
+
+
+                            <li id="pages" class="flex p-aic">Pages<i class="fa-solid fa-chevron-down"></i>
+                                
+                                <div id="desplegable_pages" class="flex p-fila p-jcse p-aic">
+                                    
+                                    
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>About Us Style 01</li>
+                                        <li>About Us Style 02</li>
+                                        <li>About Us Style 03</li>
+                                        <li>About Us Style 04</li>
+                                        <li>About Us Style 05</li>
+                                        <li>Why Choose Us</li>
+                                        
+                                    </ol>
+
+                                </div>
+
+                            </li>
+
+
+                            <li id="elements" class="flex p-aic">Elements<i class="fa-solid fa-chevron-down"></i>
+
+                                <div id="desplegable_elements" class="flex p-fila p-jcse p-aic">
+                                    
+                                    
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>Features Box</li>
+                                        <li>Service Boxes</li>
+                                        <li>Icon Boxes</li>
+                                        <li>Services Boxes Carousel</li>
+                                        <li>Team</li>
+                                        <li>Icons</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>Features Box</li>
+                                        <li>Service Boxes</li>
+                                        <li>Icon Boxes</li>
+                                        <li>Services Boxes Carousel</li>
+                                        <li>Team</li>
+                                        <li>Icons</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>Features Box</li>
+                                        <li>Service Boxes</li>
+                                        <li>Icon Boxes</li>
+                                        <li>Services Boxes Carousel</li>
+                                        <li>Team</li>
+                                        <li>Icons</li>
+                                        
+                                    </ol>
+
+                                    <ol class="tabla1 flex p-columna">
+
+                                        <li>Features Box</li>
+                                        <li>Service Boxes</li>
+                                        <li>Icon Boxes</li>
+                                        <li>Services Boxes Carousel</li>
+                                        <li>Team</li>
+                                        <li>Icons</li>
+                                        
+                                    </ol>
+
+                                </div>
+
+                            </li>
+                            <li id="blog" class="flex p-aic">Blog<i class="fa-solid fa-chevron-down"></i>
+
+                                <div id="desplegable_blog" class="flex p-columna padrerelativo">
+                                    
+                                    
+                                    <ol id="columna_blog" class="tabla1 flex p-columna">
+
+                                            <li>Demo</li>
+                                            <li>IT Solution (New)</li>
+                                            <li>Software & Startup(New)</li>
+                                            <li>Home SEO (New)</li>
+                                    
+                                    </ol>
+
+                                </div>
+                            
+                            </li>
+                            <li class="flex p-aic">Contact</li>
+                            <li class="flex p-fila p-jcc p-aic"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li class="flex p-fila p-jcc p-aic"><i class="fa-solid fa-cart-shopping"></i></li>
+
+                        </ul>
+
+                        
+                    </div>
+
+                    
+
+                </div>
+
+
+
+            </div>
+
+
+        </nav>
+
+        <section id="section_1" class=" padrerelativo">
+        
+
+                <div id="cajapadre" class="box m-100">
+
+                    
+
+                    <div id="fondo_1" class="p-100 side side1" data-index="0">
+
+                        <div class="flex p-jcc">
+
+                            <div class="flex centrado p-jcsb">
+
+                                <div id="cajacontenidofondo" class="flex p-60 p-columna p-wrap">
+
+                                    <div><h1>welcome to techno</h1></div>
+
+                                    <div><h4>We are a creative agency for your busines</h4></div>
+                                    
+
+                                    <div class="flex p-60 p-fila p-jcsb">
+
+                                        <div data-aos="fade-left"><button class="buttonworks">How it works</button></div>
+                                        
+                                        <div data-aos="fade-up" data-aos-offset="100"><button  class="buttonservices">How it Services</button></div>
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                <div class="flex centrado padrerelativo">
+
+                                    <div id="cajabotonvideo"  class="flex p-40 p-columna p-wrap">
+
+                                            <a class="video" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=8J8JJyeMaiM">
+                                                <i class="fa-solid fa-play"></i>
+                                            </a>
+               
+                                            
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    
+                    
+                    
+                    <div id="fondo_2" class=" padrerelativo side side2" data-index="1">
+
+                        <div class="flex p-jcc">
+
+                            <div class="flex centrado">
+                        
+                        
+                                    <div id="cajacontenidofondo" class="flex p-60 p-columna p-wrap">
+
+                                        <div><h1>welcome to techno</h1></div>
+
+                                        <div><h4>We are a creative agency for your busines</h4></div>
+
+                                        <div data-aos="fade-left" class="flex p-60 p-fila p-jcsb">
+
+                                            <button class="buttonworks">How it works</button>
+                                            
+
+                                        </div>
+
+                                    </div>
+
+                                    <div id="cajabotonvideo" class="flex p-40 p-columna p-wrap">
+
+                                        <a class="video" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=8J8JJyeMaiM">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    
+                                    </div>
+
+                                    
+
+                            </div>
+
+                        </div>  
+
+                    </div>                
+                    
+                    
+                </div>
+
+                <button id="prev" class="prev diseñoboton"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next" class="next diseñoboton"><i class="fa-solid fa-chevron-right"></i></button>
+
+            
+            
+
+        </section>
+
+        <section id="section_2" class="padding flex m-jcc m-aic padrerelativo">
+
+            <div class="flex centrado m-columna ">
+
+                    <div class="flex p-100 p-jcsa">
+
+                        <div class="bod-flip-box flex p-fila p-22  posicionamentoabsoluto">
+                            
+                                <div class="flip-inner flex p-100">
+                        
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 p-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <p>Provide All Kind Of IT Services</p>
+                                    </div>
+
+                                    <div class="flip-back flex textoCentrado cajagiradoraback  p-100 p-columna p-aic p-jcc p-wrap">
+                                        <h5>Provide All Kind Of IT Services</h5>
+                                        <p>Whether bringing new and amazing products and an services to market</p>
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                        <div class="bod-flip-box flex p-fila p-22  posicionamentoabsoluto">
+                            
+                            <div class="flip-inner flex p-100">
+                    
+                                <div class="flip-front flex textoCentrado cajagiradorafront p-100 p-columna p-aic p-jcc p-wrap">
+                                    <i class="fa-solid fa-gears"></i>
+                                    <p>Solution For All IT Security</p>                        </div>
+
+                                <div class="flip-back flex textoCentrado cajagiradoraback  p-100 p-columna p-aic p-jcc p-wrap">
+                                    <h5>Solution For All IT Security</h5>
+                                    <p>Whether bringing new and amazing products and an services to market</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="bod-flip-box flex p-fila p-22  posicionamentoabsoluto">
+                            
+                            <div class="flip-inner flex p-100">
+                    
+                                <div class="flip-front flex textoCentrado cajagiradorafront p-100 p-columna p-aic p-jcc p-wrap">
+                                    <i class="fa-solid fa-person-chalkboard"></i>
+                                    <p>All IT Consultancy Solution</p>                        </div>
+
+                                <div class="flip-back flex textoCentrado cajagiradoraback  p-100 p-columna p-aic p-jcc p-wrap">
+                                    <h5>All IT Consultancy Solution</h5>
+                                    <p>Whether bringing new and amazing products and an services to market</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="bod-flip-box flex p-fila p-22  posicionamentoabsoluto">
+                            
+                            <div class="flip-inner flex p-100">
+                    
+                                <div class="flip-front flex textoCentrado cajagiradorafront p-100 p-columna p-aic p-jcc p-wrap">
+                                    <i class="fa-solid fa-child"></i>
+                                    <p>Best Experience Engineer </p>                        </div>
+
+                                <div class="flip-back flex textoCentrado cajagiradoraback  p-100 p-columna p-aic p-jcc p-wrap">
+                                    <h5>Best Experience Engineer</h5>
+                                    <p>Whether bringing new and amazing products and an services to market</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div id="cajaconjuntoimagen" class="flex m-100 p-fila m-columna ">
+
+                        <div class="flex padrerelativo p-50">
+
+                            <img class="flex m-100 p-100" src="./fotos/about-img.png" alt="varias personas en la oficina">
+
+                        </div>
+
+                        <div class="flex p-50 p-columna p-aifs p-jcsb p-wrap">
+                            
+                            <h6>30 YEARS OF EXPERIENCE</h6>
+                            <h4>Preparing for your success provide best<span> IT solutions.</span></h4>
+                            <div class="flex p-20 p-jcfs bar-main">
+                                <div class=" flex bar bar-big"></div>
+                            </div>
+                            <p>We are privileged to work with hundred future-thinking awesome businesses including many of the world’s top hardware and get IT service for your technology.</p>
+                            <div class="flex p-fila">
+                                
+                                <div class="flex p-0 p-jcc p-aic">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+
+                                <div class="flex p-80 p-columna">
+                                    <h5>Warranty Management</h5>
+                                    <p>Morem Ipsum is simply dummy text of the printing and presetting found it agency business.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="flex p-fila">
+                                
+                                <div class="flex p-10 p-jcc p-aic">
+                                    <i class="fa-sharp fa-solid fa-gears"></i>
+                                </div>
+
+                                <div class="flex p-80 p-columna">
+                                    <h5>Quality Control System</h5>
+                                    <p>Porem Ipsum is simply dummy text of the printing and presetting found best quality for business.</p>
+                                </div>
+
+                            </div>
+                            
+                            <button class="buttonworks">Read More</button>
+                        </div>
+                        
+                    </div>
+            </div>
+
+    
+        </section>
+
+        <section id="section_3" class="flex p-fila m-columna m-jcc m-aic padrerelativo">
+        
+        
+            <video id="video" src="./videos/Oficina - 69952.mp4" loop autoplay muted>
+
+            </video>
+        
+            <div class="flex centrado m-columna m-wrap">
+
+                <div id="cajacontendora" class="flex p-100 p-fila p-jcc">
+
+                    <div class="flex m-columna textoCentrado m-aic section-title">
+                        <h5>Services</h5>
+                        <h3>Provide exclusive services</h3>
+                        <div class=" flex bar bar-big"></div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="flex p-100 p-fila m-columna m-aic p-jcsb m-wrap">
+
+                    <div class="bod-flip-box flex p-fila m-90 p-32 ">
+                            
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-wrap">
+                
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 m-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <h5>Marketing Strategy</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Marketing Strategy</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bod-flip-box flex p-fila m-90 p-32 p-wrap">
+
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-wrap">
+
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 m-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-pen-ruler"></i>
+                                        <h5>Interior Design</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback2 p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Interior Design</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+
+                                    
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="bod-flip-box flex p-fila m-90 p-32 p-wrap">
+
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-ai p-wrap">
+
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 m-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-users-line"></i>
+                                        <h5>Digital Services</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback3 p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Digital Services</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+
+                                    
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="bod-flip-box up-flip flex p-fila m-90 p-32 p-wrap">
+
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-wrap">
+
+                                    <div class="flip-front flex textoCentrado cajagiradorafront m-100 p-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-brands fa-btc"></i>
+                                        <h5>Product Selling</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Product Selling</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+
+                                    
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="bod-flip-box up-flip flex p-fila m-90 p-32 p-wrap">
+
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-wrap">
+
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 m-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <h5>Product Design</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback2 p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Product Design</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+
+                                    
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="bod-flip-box up-flip flex p-fila m-90 p-32 p-wrap">
+
+                        <div class="flip-inner  flex p-100 p-fila p-jcsb p-wrap">
+
+                                    <div class="flip-front flex textoCentrado cajagiradorafront p-100 m-columna p-aic p-jcc p-wrap">
+                                        <i class="fa-solid fa-child"></i>
+                                        <h5>Social Marketing</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    </div>
+
+                                    <div class="flex flip-back cajagiradoraback3 p-100 ">
+                                        <div class="flex caja textoCentrado p-100 m-columna p-aic p-jcc p-wrap">
+                                        <h5>Social Marketing</h5>
+                                        <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                        <button class="buttonexclusiveservices">Read More</button>
+                                        </div>
+                                    </div>
+            
+                        </div>
+                        
+                    </div>      
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section_4" class="flex m-jcc m-aic m-wrap padrerelativo">
+
+
+            <div class="flex centrado p-fila p-jcsb p-wrap m-fila m-jcc m-wrap">
+
+                
+                <div class="flex p-columna p-aifs m-columna m-aic p-60 padrerelativo">
+                    
+                            
+                        <h6>Team Member</h6>
+                        <h2>Our Awesome Creative</h2>
+                        <h2>Team Member</h2>
+
+                        <div class="flex p-20 p-jcfs bar-main ">
+                            <div class=" flex bar bar-big"></div>
+                        </div>
+
+                </div>
+
+
+
+                <div class="flex p-fila p-40 p-jcfe p-aic  ">
+    
+                    <button class="buttonworks  ">How it works</button>
+                
+                </div>
+
+
+                <div id="cajafotos_team" class="flex m-wrap m-100 m-columna m-aic p-100 p-fila p-jcsb p-aic padrerelativo">
+
+                    <div class="flex m-columna m-90 p-22 cajafichapersona padrerelativo">
+                        <div class="foto m-100">
+                        <img class="flex m-100" src="./fotos/team1.jpg" alt="hombre">
+                        </div>
+                        <div class="flex m-columna textoCentrado ">
+                            <h3>David Malaan</h3>
+                            <p>CEO</p>
+                        </div>
+
+                        <div class="oculto flex m-columna m-aic p-jcc">
+
+                            <a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f margenesi"></i></a>
+                            <a href="https://twitter.com/?lang=es>" target="_blank"><i class="fa-brands fa-twitter margenesi"></i></a>
+                            <a href="#header" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex m-columna m-90 p-22 cajafichapersona padrerelativo">
+                        <div class="foto m-100">
+                        <img class="flex m-100" src="./fotos/team2.jpg" alt="hombre">
+                        </div>
+                        <div class="flex m-columna textoCentrado ">
+                            <h3>Andres Jhohne</h3>
+                            <p>Director</p>
+                        </div>
+
+                        <div class="oculto flex m-columna m-aic p-jcc">
+
+                            <a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f margenesi"></i></a>
+                            <a href="https://twitter.com/?lang=es>" target="_blank"><i class="fa-brands fa-twitter margenesi"></i></a>
+                            <a href="#header" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex m-columna m-90 p-22 cajafichapersona padrerelativo">
+                        <div class="foto m-100">
+                        <img class="flex m-100" src="./fotos/team3.jpg" alt="hombre">
+                        </div>
+                        <div class="flex m-columna textoCentrado ">
+                            <h3>Michel Balak</h3>
+                            <p>Founder</p>
+                        </div>
+
+                        <div class="oculto flex m-columna m-aic p-jcc">
+
+                            <a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f margenesi"></i></a>
+                            <a href="https://twitter.com/?lang=es>" target="_blank"><i class="fa-brands fa-twitter margenesi"></i></a>
+                            <a href="#header" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex m-columna m-90 p-22 cajafichapersona padrerelativo">
+                        <div class="foto m-100">
+                        <img class="flex m-100" src="./fotos/team4.jpg" alt="hombre">
+                        </div>
+                        <div class="flex m-columna textoCentrado ">
+                            <h3>Jemes Rodrigez</h3>
+                            <p>Manager</p>
+                        </div>
+
+                        <div class="oculto flex m-columna m-aic p-jcc">
+
+                            <a href="https://es-es.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f margenesi"></i></a>
+                            <a href="https://twitter.com/?lang=es>" target="_blank"><i class="fa-brands fa-twitter margenesi"></i></a>
+                            <a href="#header" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+    
+            </div>
+
+        </section>
+
+        <section id="section_5" class="flex m-jcc m-aic ">
+
+            <div class="flex m-columna p-60 m-80 textoCentrado m-aic m-jcc padrerelativo">
+                    
+                            
+                <h6>Features Case</h6>
+                <h2>Our Latest Case Study</h2>
+                <h2>For Your Business</h2>
+
+                <div class="flex p-20 p-fila m-jcc m-aic bar-main ">
+                    <div class=" flex bar bar-big"></div>
+                </div>
+
+             </div>
+
+        </section>
+
+
+        <section id="section_6" class="flex p-jcc p-aic ">
+
+            <div id="carrusel" class="owl-carousel owl-theme">
+
+
+                <div  class="item padrerelativo ">
+                    <img src="./fotos/carrusel/1.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-financial-4/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+
+                <div class="item padrerelativo">
+                    <img src="./fotos/carrusel/2.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-financial-3/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+
+                <div class="item padrerelativo">
+                    <img src="./fotos/carrusel/3.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-financial-2/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+
+                <div class="item padrerelativo">
+                    <img src="./fotos/carrusel/4.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-business-2/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+                
+                
+                <div class="item padrerelativo">
+                    <img src="./fotos/carrusel/5.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-business-2/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+
+
+                <div class="item padrerelativo">
+                    <img src="./fotos/carrusel/6.jpg">
+                    <div  class="ventana_oculta flex m-columna m-70 p-aic p-jcc">
+                        <a href="https://techno.dreamitsolution.net/em_case_study/solution-for-financial-2/"><h2>Solution For Financial</h2></a>
+                        <span>Design Marketing</span>
+                    </div>
+                </div>
+                               
+            </div>
+
+        </section>
+    
+        <section id="section_7" class="flex m-jcc m-aic m-wrap ">
+
+            <div class="flex textoCentrado m-columna p-100 p-aic p-jcc p-wrap padrerelativo">
+                    
+                            
+                <h6>process</h6>
+                <h2>Our Working Process</h2>
+
+                <div class="flex m-100 p-fila m-jcc p-aic bar-main">
+                    <div class=" flex bar bar-big"></div>
+                </div>
+
+                
+
+
+            </div>
+
+            <div class="contenedor_principal centrado flex p-100 p-fila p-jcsb p-aic p-wrap m-wrap padrerelativo">
+
+                <div class="padrerelativo m-aic flex m-100 textoCentrado m-wrap m-100 m-columna p-30 p-columna p-wrap p-aic padrespan">
+
+                    <div class="span"><span>1</span></div>
+
+                    <h2>Select A Project</h2>
+
+                    <p class="textoCentrado">We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices. </p>
+
+                </div>
+
+                <div class="padrerelativo m-aic flex m-100 textoCentrado m-wrap m-100 m-columna p-30 p-columna p-wrap p-aic padrespan">
+
+                    <span class="span">2</span>
+
+                    <h2>Project Analysis</h2>
+
+                    <p class="textoCentrado">We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices. </p>
+
+                </div>
+
+                <div class="padrerelativo m-aic flex m-100 textoCentrado m-wrap m-100 m-columna p-30 p-columna p-wrap p-aic padrespan">
+
+                    <span class="span">3</span>
+
+                    <h2>Deliver Result</h2>
+
+                    <p class="textoCentrado">We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices. </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section_8" class="padrerelativo flex m-jcc m-aic m-wrap ">
+           
+            <div class="flex centrado p-jcsb p-aic p-wrap padrerelativo">
+
+                <div class="flex m-columna p-50  ">
+
+                    <h3>+880 013 143 206</h3>
+                    <h2>To make requests for the</h2>
+                    <h2>further information</h2>
+
+                    <a href="https://techno.dreamitsolution.net/"><button class="p-35 buttonjoin">Join With Now</button></a>
+
+                </div>
+
+                <div class="flex">
+                    <a class="video" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=8J8JJyeMaiM">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+
+                
+            </div>
+
+            
+        </section>
+
+        <section id="section_9" class="flex m-jcc m-aic m-wrap  ">
+           
+            <div class="flex centrado p-fila p-wrap m-columna m-aic m-wrap padrerelativo">
+
+                <div class="flex p-columna p-100 p-aic p-jcc p-wrap m-columna m-aic padrerelativo paddingtop">
+                        
+                                
+                    <h6>Testimonial</h6>
+                    <h2>What Says</h2>
+                    <h2>Our Happy Clients</h2>
+
+
+                    <div class="flex p-20 p-fila p-jcc p-aic bar-main ">
+                        <div class=" flex bar bar-big"></div>
+                    </div>
+
+                    
+
+
+                </div>
+
+                <div id="contenedornumbers" class="flex p-100 p-fila p-wrap m-90 m-columna m-wrap">
+
+                    <div class="p-25 textoCentrado cajitanumber">
+
+                        <h3>15K</h3>
+                        <h4>Happy Clients</h4>
+
+                    </div>
+
+                    <div class="p-25 textoCentrado cajitanumber">
+
+                        <h3>1280+</h3>
+                        <h4>Account Number</h4>
+
+                    </div>
+
+                    <div class="p-25 textoCentrado cajitanumber">
+
+                        <h3>10K</h3>
+                        <h4>Finished Projects</h4>
+
+                    </div>
+
+                    <div class="p-25 textoCentrado cajitanumber cajitanumberultima">
+
+                        <h3>992+</h3>
+                        <h4>Win Awards</h4>
+
+                    </div>
+
+                </div>
+
+
+                <div id="contenedortestimonios" class="owl-carousel owl-theme">
+
+                    <div class="item">
+
+                        <div class="flex p-columna m-columna mpadding20">
+
+                            <div class="flex cajaparrafo">
+                                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+                            </div>
+                            <div class="flex p-fila p-jcfs">
+
+                                <div class="flex">
+                                    <img class="imgtestimonio" src="./fotos/carusel_testimonial/1.jpg" alt="foto desarrollador">
+                                </div>
+                                <div class="flex p-columna p-aifs paddingleft m-columna">
+
+                                    <div class="flex p-fila p-aibl ">
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                    </div>
+
+                                    <h2>Fatima Jahra</h2>
+                                    <span>Developer</span>
+
+                                </div>
+
+                            </div>
+                
+                        </div>
+                    
+                    </div>
+
+                    <div class="item">
+
+                        <div class="flex p-columna m-columna mpadding20">
+
+                            <div class="flex cajaparrafo">
+                                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+                            </div>
+                            <div class="flex p-fila p-jcfs">
+
+                                <div class="flex">
+                                    <img class="imgtestimonio" src="./fotos/carusel_testimonial/2.jpg" alt="foto desarrollador">
+                                </div>
+                                <div class="flex p-columna p-aifs paddingleft m-columna">
+
+                                    <div class="flex p-fila p-aibl ">
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                    </div>
+
+                                    <h2>Angel Jessika</h2>
+                                    <span>Developer</span>
+
+                                </div>
+
+                            </div>
+                
+                        </div>
+                    
+                    </div>
+
+                    <div class="item">
+
+                        <div class="flex p-columna m-columna mpadding20">
+
+                            <div class="flex cajaparrafo">
+                                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+                            </div>
+                            <div class="flex p-fila p-jcfs">
+
+                                <div class="flex">
+                                    <img class="imgtestimonio" src="./fotos/carusel_testimonial/3.jpg" alt="foto manager">
+                                </div>
+                                <div class="flex p-columna p-aifs paddingleft m-columna">
+
+                                    <div class="flex p-fila p-aibl ">
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star desactive"></i>
+                                    </div>
+
+                                    <h2>Abraham Jhone</h2>
+                                    <span>IT Manager</span>
+
+                                </div>
+
+                            </div>
+                
+                        </div>
+                    
+                    </div>
+
+                    <div class="item">
+
+                        <div class="flex p-columna m-columna mpadding20">
+
+                            <div class="flex cajaparrafo">
+                                <p>Sorem ipsum dolor sit amet there any consectetur adipisicing eliter sed do the eiusmod tempor asem incididunt ut labore dolore magna aliqua. Ut enim adern minim</p>
+                            </div>
+                            <div class="flex p-fila p-jcfs">
+
+                                <div class="flex">
+                                    <img class="imgtestimonio" src="./fotos/carusel_testimonial/4.jpg" alt="foto desarrollador">
+                                </div>
+                                <div class="flex p-columna p-aifs paddingleft m-columna">
+
+                                    <div class="flex p-fila p-aibl ">
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                        <i class="fa-sharp fa-solid fa-star active"></i>
+                                    </div>
+
+                                    <h2>Jamal Vuiyan</h2>
+                                    <span>Developer</span>
+
+                                </div>
+
+                            </div>
+                
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="section_10" class="flex m-jcc m-aic m-wrap padrerelativo">
+
+            <div class="centrado flex p-fila p-jcc p-wrap m-columna padrerelativo ">
+
+                <div class="flex p-columna p-100 p-aic p-jcc p-wrap m-columna m-aic padrerelativo" style= "margin: 0px 0 70px;">
+                    
+                            
+                    <h6>Get Quote</h6>
+                    <h2>Make An</h2>
+                    <h2>Free Consultant</h2>
+    
+                    <div class="flex p-20 p-fila p-jcc p-aic bar-main ">
+                        <div class=" flex bar bar-big"></div>
+                    </div>
+    
+                    
+    
+    
+                </div>
+
+
+                <div class="flex p-100 p-fila p-jcsb p-wrap m-columna m-wrap">
+                    
+                    
+                    
+                    <form class="flex p-100 p-fila p-jcsb p-aic p-wrap m-columna m-aic m-wrap" action="formulario">
+                        <div class="flex p-100 p-fila p-jcsa m-100 m-columna m-aic m-wrap">
+                            <label class="flex p-10 p-jcc" for="">Name</label><input class="flex p-40 m-90 " type="name" placeholder="name">
+                            <label class="flex p-10 p-jcc" for="">Email</label><input class="flex p-40 m-90" type="email" placeholder="email">
+                        </div>
+                        <div class="flex p-100 p-fila p-jcsa m-100 m-columna m-aic m-wrap">
+                            <label class="flex p-10 p-jcc" for="">Tel</label><input class="flex p-40 m-90" type="tel" placeholder="phone">
+                            <label class="flex p-10 p-jcc" for="">Url</label><input class="flex p-40 m-90" type="url" placeholder="website">
+                        </div>
+
+                        <label for="">Message</label><textarea class="flex p-100 m-90" placeholder="Your Message" wrap="hard"></textarea>
+                    
+                    </form>
+
+
+
+                    <div class="flex p-100 m-jcc">
+                            <button class="p-20 buttonjoin">Free Consultancy</button>
+                    </div>
+                    
+                </div>
+    
+            </div>
+
+        </section>
+
+        <section id="section_11" class="flex m-jcc m-aic m-wrap padrerelativo">
+
+
+            <div class="flex centrado p-fila p-wrap m-columna m-wrap padrerelativo">
+
+                
+                <div class="flex p-columna p-60 m-columna mpaddingl padrerelativo">
+                    
+                            
+                        <h6>Latest Article</h6>
+                        <h2>See Our Latest</h2>
+                        <h2>Blog Posts</h2>
+
+                        <div class="flex p-20 p-jcfs bar-main ">
+                            <div class=" flex bar bar-big"></div>
+                        </div>
+
+                </div>
+
+                <div class="flex p-fila p-40 p-jcfe p-aic m-jcfe">
+    
+                    <button class="buttonworks">See All Blogs</button>
+                
+                </div>
+
+                <div id="carruselblog" class="flex p-100 owl-carousel owl-theme padrerelativo">
+
+                    <div class="item flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen1" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/1.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100 m-columna m-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="iitem flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen2" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/2.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="item flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen1" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/3.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="item flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen1" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/4.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="item flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen5" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/5.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="item flex p-columa p-wrap m-columna padrerelativo ">
+
+                        <a class="imagen1" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><img class="p-100 " src="./fotos/carrusel_blog/6.jpg" alt="Adolescentes delante de una pantalla"></a>
+                        <div class="unidad_de_texto">
+                            <div class="flex p-fila p-100 padrerelativo">
+                                <a class="transparente" href="https://techno.dreamitsolution.net/author/techno/" target="_blank">Techno</a>
+                                <span class="transparente">October 22, 2020</span>
+                            </div>
+                            <div class="flex p-columna p-100">
+                                <h2>Tiktok Illegally collecting data sharing<a href=""></a></h2>
+                                <p>Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit amet consectet </p>
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><strong>Read More  <i class="fa-solid fa-plus"></i></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="customNextBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                <div  class="customPrevBtn"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+
+        </section>
+
+        <section id="section_12" class="flex m-jcc m-aic m-wrap">
+
+            <div class="flex centrado m-columna m-aic m-wrap padrerelativo textoCentrado">
+
+                <h2>Subscribe our newsletter</h2>
+
+                <div class="flex p-fila p-80 p-jcc p-aic">
+                    <p class="flex p-80 padrerelativo">
+                            <input class="flex p-100" type="email" placeholder="Enter Your Email*">
+                            <button class="flex">Subscribe</button>
+                    </p>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="flex m-jcc m-aic m-wrap">
+
+            <div class="flex centrado">
+
+                <div class="flex m-100 m-wrap p-100 p-fila p-jcsb p-wrap m-jcc">
+
+                    <div class="flex m-100 m-wrap padding p-25 p-columna">
+                        <img class="p-60 mimg" src="./fotos/logo2-1.png">
+                        <p class="lh">Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus.</p>
+
+                        <div class="flex p-fila padtop">
+                                <p class="cap ">Follow us </p>
+                                <a href="#section_1"><i class=" padding fa-brands fa-facebook-f"></i></a>
+                                <a href="#section_1"><i class=" padding fa-brands fa-vimeo-v"></i></a>
+                                <a href="#section_1"><i class=" padding fa-brands fa-twitter"></i></a>
+                                <a href="#section_1"><i class=" padding fa-brands fa-tumblr"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex flex m-100 m-columna m-wrap padding p-25 p-columna">
+                        
+                        <h2 class="h2">Our Services</h2>
+                        <div >
+                            <ul>
+                                <li class="padrerelativo our_services "><a href="#section_1">Marketing Strategy</a></li>
+                                <li class="padrerelativo our_services"><a href="#section_1">Interior Design</a></li>
+                                <li class="padrerelativo our_services"><a href="#section_1">Digital Services</a></li>
+                                <li class="padrerelativo our_services"><a href="#section_1">Product Selling</a></li>
+                                <li class="padrerelativo our_services"><a href="#section_1">Product Design</a></li>
+                                <li class="padrerelativo our_services"><a href="#section_1">Social Marketing</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="flex m-100 m-columna m-wrap padding p-25 p-columna">
+
+                        <h2 class="h2">Company Address</h2>
+
+                        <p>Porem awesome dolor sitework amet, consetur acing</p>
+                        <p>Address: 54/1 New dhas sorini Asut, Melbord Austria.</p>
+                        <p><b>Phone:</b> 54786547521</p>
+                        <p><b>Email:</b> demo@example.com</p>
+
+
+                    </div>
+
+                    <div id="popularpost" class="flex m-100 m-columna m-wrap padding p-25 p-columna">
+                        
+                        <div id="cajaconborder">
+
+                            <h2 class="h2">Popular Posts</h2>
+
+                            <div class="flex p-100 p-fila p-wrap">
+                                
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/" target="_blank"><img class="marginright" src="./fotos/popular/1.jpg" alt="Niña delante de un ordernador"></a>
+                                <div class="flex p-50 p-fila p-wrap m-columna padding">
+                                    <a class="padbotom" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><h4 class="lh">Tiktok Illegally collecting data sharing </h4></a>
+                                    <span>October 22, 2020</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex padtop">
+
+                            <div class="flex p-100 p-fila p-wrap">
+                                
+                                <a href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/" target="_blank"><img class="marginright" src="./fotos/popular/2.jpg" alt="Niña delante de un ordernador"></a>
+                                <div class="flex p-50 p-fila p-wrap m-columna padding">
+                                    <a class="padbotom" href="https://techno.dreamitsolution.net/tiktok-illegally-collecting-data-sharing/"><h4 class="lh">Tiktok Illegally collecting data sharing </h4></a>
+                                    <span>October 22, 2020</span>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div id="pie_de_pagina" class="padtop flex p-100 p-fila p-jcsb m-columna m-aic">
+
+                        <p class="mpaddingb">Copyright © techno all rights reserved. </p>
+
+                        <ul class="flex p-fila p-aic m-columna m-aic">
+                            <li class="mpaddingb"><a href="#section_1">Terms & Condition</a></li>
+                            <li class="mpaddingb"><a href="#section_1">Privacy Policy</a></li>
+                            <li class="mpaddingb"><a href="#section_1">Contact Us</a></li>
+                        </ul>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+        </footer>
+
+        <a id="scrollUp" href="#section_1"><i class="fa-solid fa-angle-up"></i></a>
+
+    </body>
+
+</html>
